@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.lance.perfect.view.widget.TitleBarView
+        android:id="@+id/mTitleBarView"
+        android:layout_width="match_parent"
+        android:layout_height="121px">
+    </com.lance.perfect.view.widget.TitleBarView>
+    <com.lance.perfect.view.widget.pullToRefresh.PullLoadMoreRecyclerView
+        android:id="@+id/mPullLoadMoreRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation"
+        android:scrollbarThumbVertical="@color/colorAccent"/>
+</LinearLayout>

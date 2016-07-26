@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="121px"
+    android:background="@color/titlebarBgColor">
+    <TextView
+        android:id="@+id/mTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="42px"
+        android:layout_centerInParent="true"
+        android:text="我的中心"
+        android:textColor="@color/titlebarTitleColor"/>
+    <RelativeLayout
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:id="@+id/mBackLayout">
+        <ImageView
+            android:id="@+id/mBackIV"
+            android:layout_width="66px"
+            android:src="@drawable/icon_back"
+            android:layout_centerInParent="true"
+            android:layout_height="66px" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/mMoreLayout"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/mMoreIV"
+            android:layout_width="66px"
+            android:src="@drawable/icon_more"
+            android:layout_centerInParent="true"
+            android:layout_height="66px" />
+    </RelativeLayout>
+    <View
+        android:layout_alignParentBottom="true"
+        android:background="@color/lineColor"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+</RelativeLayout>

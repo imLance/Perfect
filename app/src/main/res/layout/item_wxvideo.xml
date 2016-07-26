@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    app:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#cccccc">
+        <!--标题-->
+        <TextView
+            android:id="@+id/mTitleTV"
+            style="@style/BaseTextView"
+            android:layout_alignParentBottom="true"/>
+        <!--播放器-->
+        <com.volokh.danylo.video_player_manager.ui.VideoPlayerView
+            android:id="@+id/mVideoPlayerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/mTitleTV"/>
+
+        <!--背景-->
+        <ImageView
+            android:id="@+id/mBackIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/mTitleTV"
+            android:background="@android:color/black"
+            android:contentDescription="@null"/>
+
+        <!--百分比显示-->
+        <TextView
+            android:id="@+id/mPercentTV"
+            style="@style/BaseTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

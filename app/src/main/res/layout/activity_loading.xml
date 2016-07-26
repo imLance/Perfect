@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:run="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/include_titlebar"/>
+    <TextView
+        android:id="@+id/mChangeTV"
+        android:layout_alignParentRight="true"
+        android:layout_width="260px"
+        android:layout_height="160px"
+        android:layout_marginLeft="100px"
+        android:layout_gravity="center_horizontal"
+        android:text="切换"
+        android:textSize="60px"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_greendao_search"
+        android:gravity="center"/>
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:layout_marginTop="50px"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mSpinKitView"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/colorAccent" />
+</LinearLayout>

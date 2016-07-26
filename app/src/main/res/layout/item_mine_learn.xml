@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="130px"
+    android:background="@color/background">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px"/>
+    <RelativeLayout
+        android:id="@+id/mRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:background="@color/white">
+        <TextView
+            android:id="@+id/mContextTV"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_center"
+            android:textSize="46px"/>
+    </RelativeLayout>
+</LinearLayout>

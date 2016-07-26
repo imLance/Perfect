@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <com.lance.perfect.view.widget.TitleBarView
+        android:id="@+id/mTitleBarView"
+        android:layout_width="match_parent"
+        android:layout_height="121px">
+    </com.lance.perfect.view.widget.TitleBarView>
+</merge>

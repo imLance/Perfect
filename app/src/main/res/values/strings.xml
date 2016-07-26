@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MVP框架初识</string>
+    <string name="crash_toast">我好像坏掉了，但是我记下了细节≧︿≦"</string>
+
+    <string name="home">主页</string>
+    <string name="message">消息</string>
+    <string name="me">我的</string>
+
+    <string name="permission_title_rationale">Permission needed</string>
+    <string name="permission_read_storage_rationale">Storage read permission is needed to pick files.</string>
+    <string name="permission_write_storage_rationale">Storage write permission is needed to save the image.</string>
+    <string name="label_select_picture">Select Picture</string>
+    <string name="label_cancel">Cancel</string>
+    <string name="label_ok">OK</string>
+
+    <string name="toast_cannot_retrieve_selected_image">Cannot retrieve selected image</string>
+    <string name="toast_cannot_retrieve_cropped_image">Cannot retrieve cropped image</string>
+    <string name="toast_unexpected_error">Unexpected error</string>
+
+    <string name="format_crop_result_d_d">Crop Result (%1$dx%2$d)</string>
+    <string name="format_quality_d">Quality: %d</string>
+    <string name="format_d_d_px">%1$dx%2$d px</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.lance.perfect.view.widget.TitleBarView
+        android:id="@+id/mTitleBarView"
+        android:layout_width="match_parent"
+        android:layout_height="121px">
+    </com.lance.perfect.view.widget.TitleBarView>
+    <LinearLayout
+        android:id="@+id/mClickMeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baozou1"
+            android:layout_width="110px"
+            android:layout_height="160px" />
+        <TextView
+            android:id="@+id/mClickTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点我呀"
+            android:textSize="60px"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.lance.perfect.view.widget.TitleBarView
+        android:id="@+id/mTitleBarView"
+        android:layout_width="match_parent"
+        android:layout_height="121px">
+    </com.lance.perfect.view.widget.TitleBarView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/wrapper_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/button_crop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PICK and CROP"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/button_random_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CROP RANDOM IMAGE"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent"/>
+
+            <RadioGroup
+                android:id="@+id/radio_group_aspect_ratio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Aspect ratio"
+                    android:textAppearance="?android:textAppearanceSmall"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox_freestyle_crop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Freestyle crop"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <RadioButton
+                    android:id="@+id/radio_dynamic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dynamic"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    tools:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/radio_origin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Image source"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <RadioButton
+                    android:id="@+id/radio_square"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Square"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edit_text_ratio_x"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="x"
+                        android:inputType="numberDecimal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="to"
+                        tools:ignore="HardcodedText"/>
+
+                    <EditText
+                        android:id="@+id/edit_text_ratio_y"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:hint="y"
+                        android:inputType="numberDecimal"/>
+
+                </LinearLayout>
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Max cropped image size"
+                android:textAppearance="?android:textAppearanceSmall"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_max_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Resize image to max size"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edit_text_max_width"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="Width"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="x"
+                    tools:ignore="HardcodedText"/>
+
+                <EditText
+                    android:id="@+id/edit_text_max_height"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="Height"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent"/>
+
+            <RadioGroup
+                android:id="@+id/radio_group_compression_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Compression settings"
+                    android:textAppearance="?android:textAppearanceSmall"/>
+
+                <RadioButton
+                    android:id="@+id/radio_jpeg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JPEG"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    tools:checked="true"
+                    tools:ignore="HardcodedText"/>
+
+                <RadioButton
+                    android:id="@+id/radio_png"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PNG"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    tools:ignore="HardcodedText"/>
+
+                <TextView
+                    android:id="@+id/text_view_quality"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    tools:text="Quality: 90"/>
+
+                <SeekBar
+                    android:id="@+id/seekbar_quality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:progress="90"/>
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Ui"
+                android:textAppearance="?android:textAppearanceSmall"/>
+            <CheckBox
+                android:id="@+id/checkbox_hide_bottom_controls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hide bottom UI controls"
+                android:textAppearance="?android:textAppearanceMedium"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

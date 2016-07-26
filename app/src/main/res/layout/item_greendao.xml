@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_marginTop="20px"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/mDelIV"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"
+            android:src="@drawable/icon_greendao_del"/>
+        <ImageView
+            android:id="@+id/mEditIV"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/mDelIV"
+            android:layout_marginRight="60px"
+            android:src="@drawable/icon_greendao_edit"/>
+        <TextView
+            android:id="@+id/mContextTV"
+            android:layout_width="match_parent"
+            android:layout_toLeftOf="@id/mEditIV"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="60px"
+            android:textColor="@color/black_center"
+            android:textSize="@dimen/txt_font_middle"/>
+    </RelativeLayout>
+</RelativeLayout>
