@@ -10,6 +10,7 @@ public class MineLearnEntity {
     private String content;
     /**相关类名*/
     private String className;
+    //
 
     public MineLearnEntity(String content, String className) {
         this.content = content;
